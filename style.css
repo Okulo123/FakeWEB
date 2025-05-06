@@ -1,0 +1,231 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e3e3e3; /* 淡灰色背景 */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1; /* 中間內容自動撐開 */
+}
+
+.header-bar {
+    background: linear-gradient(to right, #129ca2, #117d95); /* 向右的漸層 */
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    height: 20px;
+}
+
+p {
+    font-size: 16px; /* 設定字體大小 */
+    font-family: 'Arial', sans-serif; /* 設定字體家族 */
+    color: #333; /* 設定字體顏色 */
+}
+
+h6 {
+    font-size: 25px; /* 設定字體大小 */
+    font-family: "Helvetica Neue", Helvetica, Roboto, sans-serif; /* 設定字體家族 */
+    color: #464646; /* 設定字體顏色 */
+    margin: 0 0 0 3px; /* 設定外邊距 */
+    font-style: italic;
+}
+
+.logo {
+    height: 40px;
+}
+
+.main-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.input-container > div:first-child img {
+    height: auto;
+    width: 80%; /* 設定圖片寬度 */
+    position: relative; /* 設置相對定位 */
+}
+
+.input-container { /* 外面白白的容器*/
+    margin: 20px auto; /* 水平置中 */
+    width: 20%; /* 調整寬度 */
+    height: 900px; /* 調整高度 */
+    background-color: white; /* 白色背景 */
+    padding: 20px; /* 調整內邊距 */
+    border-radius: 3px; /* 圓角 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 添加陰影 */
+    min-width: 300px; /* 最小寬度 */
+    max-width: 600px; /* 最大寬度 */
+    position: relative;
+    top: 85px; /* 向下移動 */
+}
+
+@media (max-width: 320px) {
+    .input-container {
+        width: 90%; /* 當視窗過窄時，讓容器占滿版面 */
+    }
+}
+
+.input-group {
+    margin-bottom: 15px;
+    width: 80%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+
+.input-group input,
+.password-wrapper input {
+    position: relative; /* 設置相對定位 */
+    left: 35px; /* 向右移動 35px */
+    background-color: #fdfdfd; /* 調淡背景顏色 */
+    padding: 5px 10px; /* 縮窄上下內邊距 */
+    font-size: 16px; /* 保持字體大小 */
+    border: 1px solid #ccc; /* 邊框樣式 */
+    border-radius: 3px; /* 圓角 */
+    box-sizing: border-box; /* 包含內邊距和邊框 */
+}
+.input-group input {
+    position: relative; /* 設置相對定位 */
+    left: 35px; /* 向右移動 20px */
+}
+
+.password-wrapper {
+    position: relative; /* 設置相對定位 */
+}
+
+.password-wrapper input {
+    position: relative; /* 設置相對定位 */
+    top: -8px;
+    left: 35px; /* 向右移動 35px */
+    background-color: #fdfdfd; /* 調淡背景顏色 */
+    padding: 5px 10px; /* 縮窄上下內邊距 */
+    font-size: 16px; /* 保持字體大小 */
+    border: 1px solid #ccc; /* 邊框樣式 */
+    border-radius: 3px; /* 圓角 */
+    box-sizing: border-box; /* 包含內邊距和邊框 */
+}
+
+/* 登入按鈕 */
+.login-button {
+    width: 100%;
+    top:8px;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    position: relative;
+    left: 35px; /* 向右移動 35px */
+    background-color: #117d95; /* 按鈕背景色 */
+    border: none;
+    border-radius: 5px; /* 圓角 */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #0f7c81; /* 改變背景色 */
+    transform: scale(1.05); /* 放大按鈕 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 添加陰影 */
+}
+.input-container img:hover {
+    transform: scale(1.1); /* 放大圖片 */
+    transition: transform 0.3s ease; /* 添加平滑過渡效果 */
+    cursor: pointer; /* 改變鼠標為手型 */
+}
+
+.form-options {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* 控制每一項之間的間距 */
+    font-size: 14px;
+    white-space: nowrap; /* 避免自動換行 */
+    text-align: center;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 4px; /* 控制 checkbox 和文字的間距 */
+    text-align: center;
+}
+.forgot-password {
+    color: #117c94; /* 設定文字顏色 */
+    text-decoration: none; /* 移除底線 */
+    font-size: 12px; /* 調整字體大小 */
+    right: 20px;
+    top: 50px;
+}
+
+
+.footer { /* 底部欄位 */
+    background-color: #e3e3e3;
+    color: black;
+    text-align: center;
+    padding: 15px 0 5px 0; /* 增加上邊距空間 */
+    border-top: 1px solid #989898;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 10px;
+    height: 50px;
+}
+
+.footer p {
+    font-size: 12px;
+    margin: 5px 0 5px 0; /* 上10px，下4px */
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+    margin: 0 10px;
+}
+
+.divider span {
+    font-size: 14px;
+    color: #666;
+}
+
+.icon-row {
+    display: flex; /* 使用 Flexbox 排列 */
+    justify-content: center; /* 水平置中 */
+    align-items: center; /* 垂直置中 */
+    gap: 10px; /* 圖片之間的間距 */
+    margin-top: 20px; /* 與其他內容的間距 */
+}
+
+.icon {
+    width: 40px; /* 設定圖片寬度 */
+    height: 40px; /* 設定圖片高度 */
+    cursor: pointer; /* 滑鼠移上時顯示手型 */
+    transition: transform 0.3s ease; /* 添加平滑過渡效果 */
+}
+
+.icon:hover {
+    transform: scale(1.1); /* 滑鼠移上時放大圖片 */
+}
